@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "5de14800-55f8-41b2-9d37-d920b2b00d83",
+		"name": "test-task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18081090"
+	},
+	"item": [
+		{
+			"name": "ratings",
+			"item": [
+				{
+					"name": "get all top-rated-movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/top-rated-movies",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"top-rated-movies"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "movies",
+			"item": [
+				{
+					"name": "save/create movie",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titleType\": \"test1\",\r\n    \"primaryTitle\": \"test1\",\r\n    \"runtimeMinutes\": 200,\r\n    \"genres\": \"test1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/new-movie",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"new-movie"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all longest-duration-movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/longest-duration-movies",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"longest-duration-movies"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
